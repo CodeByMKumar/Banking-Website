@@ -1,0 +1,64 @@
+/* Main Mortgage Calculator Section */
+.main-section-mortgage {
+  min-height: calc(75vh - 80px);
+  margin: 0 4.5%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+/* Mortgage Calculator Styling */
+.mortgage-container {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: var(--light-bg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+/* form */
+.form-group {
+  margin-bottom: 15px;
+}
+/* Required Field Input Styling */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* Button Styling*/
+button {
+  width: 100%;
+  padding: 10px;
+  border: white;
+  background-color: var(--team-txt-color);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Validate Field Styling */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result p {
+  margin: 5px 0;
+}
+/* Calculate Button Styling */
+#calculate{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+/* Animation */
+.main-section-mortgage{
+  opacity: 0;
+  translate: 0px -100px;
+  animation: movement 1.5s forwards ease;
+}

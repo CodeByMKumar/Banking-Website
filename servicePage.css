@@ -1,0 +1,156 @@
+/* Main Services */
+.main-section-services{
+  min-height: calc(100vh - 80px);
+  margin:0px 4.5%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+/* Services Style */
+.services-container{
+  flex: 1;
+  margin-top: 50px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:15px;
+}
+@media(min-width:730px){
+  .services-container{
+    flex-direction:row;
+    align-items: stretch;
+  }
+}
+.service-container:nth-child(1){
+  --team-member:1;
+  z-index: 3;
+}
+.service-container:nth-child(2){
+  --team-member:2;
+  z-index: 2;
+}
+.service-container:nth-child(3){
+  --team-member:3;
+  z-index: 1;
+}
+.service-container{
+  padding: 30px;
+  max-width: 350px;
+  width:100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  transition:scale 0.2s ease;
+  cursor: pointer;
+  opacity:0;
+  translate: -100px 0px;
+  animation: movement 1s forwards ease; 
+  animation-delay: calc(0.2s * var(--team-member));
+  background-color:var(--light-bg);
+}
+/* Services Hover Effect */
+.service-container:hover{
+  scale: 1.05;
+}
+/* Services Header */
+.service-header{
+  display: flex;
+  align-items: center;
+  gap:5%;
+}
+/* Services Icons & Style */
+.icon-container{
+  flex: 1;
+  max-width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:var(--team-txt-color);
+}
+.icon-container i{
+  font-size: 70px;
+  color: rgb(248,144,18);
+}
+.positions-container{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right:10px;
+}
+.positions-container span{
+  cursor: default;
+}
+/* Services Name Styling */
+.service-name{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0px 25px 0px;
+  display: flex;
+  align-items: center;
+  cursor: default;
+  gap: 5px;
+}
+@media(min-width:730px) and (max-width:910px){
+  .service-name{
+    width:55%; 
+  }
+}
+/* Services Information Styling */
+.service-info{
+  cursor: default;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+/* Read more Section Styling */
+.service-info.show-more .read-more{
+  display: none;
+}
+.service-info.show-more .extra-info{
+  display: inline !important;
+}
+.read-more{
+  color: rgb(0, 0, 255);
+  cursor: pointer;
+  width: fit-content;
+}
+.read-more:hover{
+  text-decoration: underline;
+}
+/* Extra Info Linked With Read More */
+.extra-info{
+  display: none;
+}
+/* Contact Button Styling With Hover Effect */
+.apply-form-btn{
+  border:2px solid black;
+  background-color:transparent;
+  font-size: 20px;
+  height: 38px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: auto;
+}
+.apply-form-btn:hover{
+  transition: background-color 0.3s ease;
+  background-color: black;
+}
+.apply-form-btn:hover a{
+  transition: color 0.5s ease;
+  color: white;
+}
+.apply-form-btn a{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,37 @@
+/* General CSS Section */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --light-bg:rgb(255,255,255);
+  --dark-bg:rgb(12,11,11);
+  --hover-blue-color:rgb(23,67,227);
+  --red-txt-color:rgb(206,20,70);
+  --team-txt-color:rgb(23,3,47);
+}
+body{
+  font-family: Roboto;
+  background-color: var(--light-bg);
+  transition: background-color 0.15s ease;
+}
+main{
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: 1fr;
+  min-width:300px;
+}
+
+#title-name{
+  color: black;
+  text-decoration: none;
+}
+#title-name-footer{
+  color: white;
+  text-decoration: none;
+}
+.footer :hover{
+  cursor: pointer;
+}

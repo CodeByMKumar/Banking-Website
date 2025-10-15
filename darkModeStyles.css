@@ -1,0 +1,165 @@
+/* Dark Mode Styles Section Adjusts So It Fits From Light To Dark Through The Toggle Button*/
+body.active{
+  background-color: var(--dark-bg);
+}
+body.active header{
+  background-color:var(--dark-bg);
+}
+body.active .toggle{
+background: #fff;
+box-shadow: 
+inset 0 2px 60px rgba(0,0,0,0.1),
+inset 0 2px 8px rgba(0,0,0,0.1),
+inset 0 -4px 4px rgba(0,0,0,0.05);
+}
+body.active .indicator{
+left:100%;
+transform: translate(-100%,0%);
+background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+box-shadow: 
+0 8px 20px rgba(0,0,0,0.1),
+inset 0 4px 4px rgba(225,225,225,1),
+inset 0 -4px 4px rgba(225,225,225,1);
+}
+body.active header,
+body.active  .nav-link li a{
+  color:white;
+}
+body.active  .nav-link li a.active{
+  color:var(--hover-blue-color);
+}
+body.active .home-heading,
+body.active .home-extra-info{
+  color: white;
+}
+body.active .heading-about,
+body.active .lorem-para,
+body.active .projects-done-container,
+body.active .clients-container{
+  color: white;
+}
+body.active .team-heading,
+body.active .member-name,
+body.active .platforms-container a i{
+  color: white;
+}
+body.active .member-role{
+  color: rgb(207, 207, 207);
+}
+body.active .team-member{
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+  background-color: var(--dark-bg);
+}
+body.active .course-container{
+  background-color: var(--dark-bg);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+  color: white;
+}
+body.active .career-container{
+  background-color: var(--dark-bg);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+}
+body.active .career-name,
+body.active .apply-form-btn,
+body.active .positions-container span,
+body.active .career-info{
+  color: white;
+  border-color: white;
+}
+body.active .apply-form-btn a{
+  color: white;
+}
+body.active .apply-form-btn:hover{
+  background-color: white;
+}
+body.active .apply-form-btn:hover a{
+  color: black;
+}
+body.active .contact-form-container{
+  background-color: var(--dark-bg);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+}
+body.active .form-heading,
+body.active form,
+body.active textarea::placeholder,
+body.active .input-container input,
+body.active textarea{
+  color: white;
+}
+body.active .btn-container-form button{
+  background-color: white;
+  color: black;
+}
+body.active .input-container input,
+body.active textarea{
+  border-color: white;
+}
+body.active .btn-container button{
+  background-color: white;
+}
+body.active .btn-container a{
+  color: black;
+}
+body.active #title-name{
+  color: white;
+}
+body.active .footer{
+  background-color: #181818;
+}
+/*animations*/
+@keyframes movement{
+  100%{
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+@keyframes movementTooltip{
+  100%{
+    translate:-50% 0;
+    opacity: 1;
+  }
+}
+
+body.active .faq-section{
+  background-color: var(--dark-bg);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+}
+
+body.active .accordion-item{
+  background-color: var(--dark-bg);
+}
+
+body.active .faq-heading,
+body.active .accordion-title,
+body.active .bx-chevron-down{
+  color: white;
+} 
+
+body.active .service-container{
+  background-color: var(--dark-bg);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+}
+
+body.active .service-name,
+body.active .service-info,
+body.active .bxs-data,
+body.active .bx-user,
+body.active .bxs-cog{
+  color: white;
+}
+
+body.active .mortgage-container{
+  background-color: var(--dark-bg);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+
+}
+
+body.active .calculator-heading{
+  color: white;
+}
+
+body.active #calculate{
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+} 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Reserve</title>
+  <!-- BoxIcons Link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/mortgagePage.css">
+  <link rel="stylesheet" href="style/darkModeStyles.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <!-- jQuery Library-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <nav>
+        <!-- Hamburger Icon To Display On Smaller Screens -->
+        <i id="hamburger-icon" class='bx bx-menu'></i>
+        <!-- Link Back To Home Page -->
+        <a class="title" href="homePage.html" id="title-name">Prime Reserve</a>
+        <!-- Navigation Links With Style -->
+        <ul class="nav-link">
+          <li><a href="homePage.html" style="--i:1">Home</a></li>
+          <li><a href="aboutPage.html" style="--i:2">About</a></li>
+          <li><a href="servicesPage.html" style="--i:3">Services</a></li>
+          <li><a class="active" href="mortgagePage.html" style="--i:4">Mortgage Calculator</a></li>
+          <li><a href="faqPage.html" style="--i:5">FAQ</a></li>
+          <li><a href="contactPage.html" style="--i:6">Contact</a></li>
+        </ul>
+        <!-- Dark/Light Mode Toggle Button -->
+        <div class="toggle">
+          <i class="indicator"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- Navigation Responsive -->
+    <ul class="nav-link-responsive">
+      <!-- Compatibilty "x-mark" Icon Features User To Close Hamburger Menu Icon -->
+      <li>
+        <i id="x-mark" class='bx bx-x'></i>
+      </li>
+      <!-- Navigation Links With Current Page Set To Active-->
+      <li>
+        <a href="homePage.html">Home</a>
+      </li>
+      <li>
+        <a href="aboutPage.html">About</a>
+      </li>
+      <li>
+        <a href="servicesPage.html">Services</a>
+      </li>
+      <li>
+        <a class="active" href="mortgagePage.html">Mortgage Calculator</a>
+      </li>
+      <li>
+        <a  href="faqPage.html">FAQ</a>
+      </li>
+      <li>
+        <a href="contactPage.html">Contact</a>
+      </li>
+    </ul>
+    <!-- Mortgage Calculator Section With Included Fields To Input Inorder to Receive a Result-->
+    <section class="main-section-mortgage">
+      <div class="mortgage-container">
+          <div class="calculator-heading">
+              <h2>Mortgage Calculator</h2>
+          </div>
+          <form id="mortgageForm">
+              <div class="form-group">
+                  <label for="loanAmount">Loan Amount (£):</label>
+                  <input type="number" id="loanAmount" min="0" required>
+              </div>
+              <div class="form-group">
+                  <label for="loanTerm">Loan Term (years):</label>
+                  <input type="number" id="loanTerm" min="1" required>
+              </div>
+              <div class="form-group">
+                  <label for="monthlyIncome">Monthly Income (£):</label>
+                  <input type="number" id="monthlyIncome" min="0" required>
+              </div>
+              <button type="button" id="calculate">Calculate</button>
+              <div class="error" id="error"></div>
+              <div class="result" id="result"></div>
+          </form>
+      </div>
+  </section>
+  <!-- General Footer Containing Company Name & Social Media Icons With Links -->
+    <section class="footer">
+      <a class="site-name" href="homePage.html" id = "title-name-footer">Prime Reserve</a>
+      <div class="social-media-links">
+        <a href="https://twitter.com/home" target="_blank" class="social-media-link" style="--delay:1;">
+            <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank"  class="social-media-link" style="--delay:2;">
+            <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank"  class="social-media-link" style="--delay:3;">
+            <i class="bx bxl-instagram"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- General/Specific Scripts-->
+  <script src="mortgageCalculator.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

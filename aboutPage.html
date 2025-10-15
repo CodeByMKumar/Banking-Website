@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Reserve</title>
+  <!-- BoxIcons Link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/header.css">  
+  <link rel="stylesheet" href="style/aboutPage.css">
+  <link rel="stylesheet" href="style/darkModeStyles.css">
+  <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+  <main>
+    <header>
+      <nav>
+        <!-- Hamburger Icon To Display On Smaller Screens -->
+        <i id="hamburger-icon" class='bx bx-menu'></i>
+         <!-- Link Back To Home Page -->
+        <a class="title" href="homePage.html" id = "title-name">Prime Reserve</a>
+        <!-- Navigation Links With Style -->
+        <ul class="nav-link">
+          <li> 
+              <a href="homePage.html" class="home-link" style="--i:1">Home</a>
+          </li>
+          <li>
+              <a href="aboutPage.html" class="active" style="--i:2">About Us</a>
+          </li>
+          <li>
+            <a  href="servicesPage.html" style="--i:3">Services</a>
+          </li>
+          <li>
+            <a  href="mortgagePage.html" style="--i:4">Mortgage Calculator</a>
+          </li>
+          <li>
+            <a  href="faqPage.html" style="--i:4">FAQ</a>
+          </li>
+          <li>
+            <a  href="contactPage.html" style="--i:5">Contact</a>
+          </li>
+        </ul>
+        <!-- Dark/Light Mode Toggle Button -->
+        <div class="toggle">
+          <i class="indicator"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- Navigation Responsive -->
+    <ul class="nav-link-responsive">
+      <!-- Compatibilty "x-mark" Icon Features User To Close Hamburger Menu Icon -->
+      <li>
+        <i id="x-mark" class='bx bx-x'></i>
+      </li>
+      <!-- Navigation Links With Current Page Set To Active-->
+      <li>
+        <a href="homePage.html">Home</a>
+      </li>
+      <li>
+        <a href="aboutPage.html" class="active">About</a>
+      </li>
+      <li>
+        <a href="servicesPage.html">Services</a>
+      </li>
+      <li>
+        <a  href="mortgagePage.html">Mortgage Calculator</a>
+      </li>
+      <li>
+        <a href="faqPage.html">FAQ</a>
+      </li>
+      <li>
+        <a href="contactPage.html">Contact</a>
+      </li>
+    </ul>
+    <!-- About Us Section Informing On Company Origin -->
+    <section class="main-section-about">
+      <div class="picture-container">
+        <img src="images/Image About.webp">
+      </div>
+      <div class="info-container">
+        <div class="top-info-container">
+          <div class="about-txt">About</div>
+          <div class="heading-about">
+            We Guarantee Your Financial Success - Love To Help You
+          </div>
+          <div class="red-line"></div>
+        </div>
+        <div class="lorem-para">
+        At Prime Reserve, we are proud of our legacy, which was first founded in 2005 with the intention of offering a trust worthy & client-focused financial services. Our aim is to assist indviduals & companies whom face financial barriers by providing a cutting-edge, open banking solutions that simplifies and enhances the every day money management system. Built on principles involving honesty, customer service, innovation & quality we have fully committed to supply tailored services that satisfy and meet your needs. Most importantly, its our pleasure to be part of your banking system & appreicate your trust in Prime Reserve.
+        </div>
+        <div class="bottom-info-container">
+          <div class="projects-done-container">
+            <div class="projects-num">500+</div>
+            <div>Success Stories</div>
+          </div>
+          <div class="clients-container">
+            <div class="clients-num">20k</div>
+            <div>Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- General Footer Containing Company Name & Social Media Icons With Links -->
+    <section class="footer">
+      <a class="site-name" href="homePage.html" id = "title-name-footer">Prime Reserve</a>
+      <div class="social-media-links">
+        <a href="https://twitter.com/home" target="_blank" class="social-media-link" style="--delay:1;">
+            <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank"  class="social-media-link" style="--delay:2;">
+            <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank"  class="social-media-link" style="--delay:3;">
+            <i class="bx bxl-instagram"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- General Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
